@@ -19,11 +19,19 @@
 
 const slider = tns({
     container: '.carousel__inner',
-    items: 3,
+    controls: false,
+    nav: false,
+    items: 1,
     slideBy: 'page',
     autoplay: false
   });
 
-  document.querySelector('.prev').onclick = function () {
+  document.querySelector('.prev').addEventListener('click', function () {
     slider.goTo('prev');
-  };
+  })
+
+  document.querySelector('.next').addEventListener('click', function () {
+    slider.goTo('next');
+  });
+
+  
