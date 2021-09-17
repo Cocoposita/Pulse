@@ -1,21 +1,37 @@
 @media (max-width: 1200px) {
-
     .promo {
-        
         background-position: 20% 0%;
      }
- 
-
 }
 
 @media (max-width: 991px) {
-
     .promo {
        background-position: 25% 0%;
+
     }
 
+    .header {
+        padding-right: 10px;
+    }
+
+    .promo__wrapper {
+        padding-right: 10px;
+    }
+
+    .carousel {
+        .container {
+        max-width: 730px;
+        }
+    }
    .consultation {
        padding-left: 15px;
+   }
+   .catalog {
+    margin: 0 auto;
+    max-width: 900px;
+    &__content{
+        justify-content: center 
+    }
    }
 
 }
@@ -35,6 +51,18 @@
         }
     }
     
+    .carousel {
+        .container {
+        max-width: 500px;
+        }
+
+        .tns-item {
+            img {
+                width:70%;
+            }
+        }
+    }
+
     .advantages {
         &__wrapper{
             margin-top: 50px;
@@ -61,5 +89,13 @@
         &__description {
             font-size: 18px;
         }
+    }
+
+    .catalog {
+        padding-bottom: 50px;
+    }
+
+    .review {
+        margin: 0 10px;
     }
 }
