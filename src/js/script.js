@@ -22,6 +22,14 @@
     
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+
+
+    //Modal
+
+
+    $('[data-modal=consultaion]').on('click', function() {
+      $('.overlay, #consultation').fadeIn();
+    });
    });
 
 const slider = tns({
